@@ -24,7 +24,7 @@ fetch('https://amzn-s3-radar.s3.us-east-2.amazonaws.com/posts.json')
         <h2>${post.title_es}</h2>
         <p>${post.summary_es}</p>
         <a href="${post.source_url}" target="_blank">Leer fuente</a><br><br>
-        <a href="${post.image_url}" target="_blank">Ver imagen</a>
+        <img src="${post.image_url}" width="300"/>
       `;
 
       container.appendChild(div);
